@@ -5,7 +5,7 @@ class Fountain {
     this.autoAddParticle = false;
     this.height = document.documentElement.clientHeight;
     this.sizes = [15, 20, 25, 35, 45];
-    this.variants = ["🧟", "🧟"];
+    this.variants = ["📢", "📢"];
     this.addHandlers();
     this.loop();
   }
@@ -13,9 +13,9 @@ class Fountain {
   loop() {
     if (this.autoAddParticle && this.particles.length < this.limit) {
       // if (document.getElementById("field-email") === document.activeElement) {
-      //   this.variants = ["🧟"];
+      //   this.variants = ["📢"];
       // } else {
-      //   this.variants = ["🧟"];
+      //   this.variants = ["📢"];
       // }
       this.createParticle();
     }
